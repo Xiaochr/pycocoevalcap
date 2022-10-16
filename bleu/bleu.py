@@ -29,7 +29,9 @@ class Bleu:
             ref = gts[id]
 
             if len(hypo) != 1:
+                print(id)
                 print(hypo)
+                print(ref)
 
             # Sanity check.
             assert(type(hypo) is list)
