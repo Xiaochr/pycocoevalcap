@@ -25,7 +25,7 @@ class PTBTokenizer:
     """Python wrapper of Stanford PTBTokenizer"""
 
     def tokenize(self, captions_for_image):
-        cmd = ['/root/jdk-19/bin/java', '-cp', STANFORD_CORENLP_3_4_1_JAR, \
+        cmd = ['/root/jdk1.8.0_221/bin/java', '-cp', STANFORD_CORENLP_3_4_1_JAR, \
                 'edu.stanford.nlp.process.PTBTokenizer', \
                 '-preserveLines', '-lowerCase']
 
